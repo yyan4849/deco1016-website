@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact you</title>
+    <link rel="stylesheet" type="text/css" href="css/signup.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container about-you-container">
+                <!-- form -->
+            <form action="">
+                <h1>Set up</h1>
+                <div class="form-info">
+                        <div class="form-group">
+                        <label for="Address">Street Address</label>
+                        <span>E.g. 22 Pitt Street</span>
+                        <input type="text" id="Address" name="Address" placeholder="Enter your Address">
+                        <div class="messages"></div>
+                        </div>
+                        <div class="form-group">
+                        <label for="Suburb">Suburb</label>
+                        <input type="text" id="Suburb" name="Suburb" placeholder="Enter your Address">
+                        <div class="messages"></div>
+                        </div>
+                        <div class="form-group">
+                        <label for="Postcode">Postcode</label>
+                        <input type="text" id="Postcode" name="Postcode" placeholder="Enter your Address">
+                        <div class="messages"></div>
+                        </div>
+                        <div class="form-group">
+                        <label for="State">State</label>
+                        <select id="State" name="State">
+                                <option value="">Please enter your state</option>
+                                <option value="AF">ATC</option>
+                                <option value="AX">NSW</option>
+                                <option value="AL">NT</option>
+                                <option value="DZ">QLD</option>
+                                <option value="AS">SA</option>
+                                <option value="AD">TAS</option>
+                                <option value="AO">VIC</option>
+                                <option value="AI">WA</option>
+                              </select>
+                        </div>
+                        <div class="form-group">
+                        <label>How would you like to shop</label>
+                        <div class="check-container">
+                            <label class="checkboxContainer">Pick up
+                                    <input type="checkbox" id="preference"  name="preference">
+                            </label>
+                            <label class="checkboxContainer">Delivery
+                                    <input type="checkbox" id="preference"  name="preference">
+                            </label>
+                            <label class="checkboxContainer">Shop in store
+                                    <input type="checkbox" id="preference"  name="preference">
+                            </label>
+                        </div>
+                        </div>
+                        <!-- button -->
+                        <div class="btn">
+                                <button><a href="contact.html">Back</a></button>
+                                <div class="form-group">
+                                        <button type="submit">Submit</button>
+                                      </div>
+                                      <button><a href="endpage.html">Next</a></button>
+                        </div>
+                        
+                </div>
+
+            </form>
+        </div>
+        <!-- progressbar -->
+        <div class="progressbar-left">
+                <div class="progressbar-container">
+                        <ul class="progressbar">
+                            <li></li>
+                            <li></li>
+                            <li class="active"></li>
+                        </ul>
+                </div>
+        </div>
+    </div>
+    <!-- insert validation library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

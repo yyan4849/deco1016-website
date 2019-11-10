@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+/* general set up */
+*{
+    box-sizing: border-box;
+}
+body {
+    background: #f6f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    margin:10% auto;
+    height: 100%;
+    width:100%;
+}
+a{
+    text-decoration: none;
+    color:#f5f5f5
+}
+/* text set up */
+.form-info{
+    margin-top: 10px;
+}
+h1 {
+    font-weight: bold;
+    margin: 0;
+}
+label{
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 0px;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+#State{
+    width:100%;
+    margin-bottom: 20px;
+}
+span{
+    display: block;
+    font-size: 0.75em;
+    opacity: 0.5;
+}
+input:last-child{
+    margin-bottom: 10px;
+}
+
+/* button settings */
+.btn{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+}
+button {
+    margin:20px auto;
+    border-radius: 20px;
+    border: 1px solid #da5148;
+    background-color: #da5148;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+button:hover{
+    transform: scale(0.95);
+    background:#f5c285;
+}
+/* 
+form set up */
+form{
+    max-width: 600px;
+    margin:0 auto;
+    background:#fff;
+    height:100%;
+    text-align:left;
+}
+input{
+    background:#eee;
+    border:none;
+    padding: 15px 15px;
+    width:100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.container{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+            0 10px 10px rgba(0,0,0,0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+.about-you-container {
+    left: 0;
+    width:40%;
+    z-index: 2;
+    transform: translate(125%);
+}
+/* =====error text==== */
+form .messages {
+    flex: 0 0 100%;
+    text-align: left;
+    color: #ff6361;
+    font-size: 0.8em;
+  }
+  
+  form .form-group.has-error > input,
+  form .form-group.has-error > select  {
+    border: 2px solid #ff6361;
+  }
+  
+  form .form-group.has-success > input,
+  form .form-group.has-success > select  {
+    border: 2px solid #41a765;
+  }
+/* ====progress bar===== */
+.progressbar-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 100;
+    background: #da5148;
+}
+
+
+.progressbar{
+    counter-reset: step;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 20px;
+    height:100%;
+    text-align: center;
+}
+/* bar setup number */
+.progressbar li{
+    list-style-type: none;
+    position: relative;
+    text-align: center;
+    padding-bottom: 50px;
+    color:#da5148;
+
+}
+/* bar setup circle */
+.progressbar li:before{
+    content:counter(step);
+    counter-increment: step;
+    width:60px;
+    height:60px;
+    line-height:60px;
+    border:3px solid #f6f5f7;
+    display:block;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 20px auto 20px auto;
+    border-radius: 50%;
+    background: #f6f5f7;
+}
+/* bar setup line */
+.progressbar li::after{
+    content:'';
+    position: absolute;
+    width: 3px;
+    height:75%;
+    background: #f6f6f6;
+    top: -60%;
+    z-index: -1;
+}
+.progressbar li:first-child:after{
+    content:none
+}
+ /* active class */
+.progressbar li.active{
+
+    color:white;
+}
+.progressbar li.active::before{
+    border-color:#f5c285;
+    background:#f5c285;
+}
+.progressbar li.active + li:after{
+    background-color: #f5c285;
+}
+
+/*======= checkbox======= */
+.checkboxContainer{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin:10px;
+    font-size: 12px;
+}
+
+.check-container{
+    display:flex;
+    width:100%;
+    justify-content: space-around;
+}
+/* responsive design */
+@media screen and (max-width: 769px) {
+    .btn{
+      display: block;
+    }
+    .check-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (max-width: 426px) {
+   body{
+      width: auto;
+      border-radius: 0;
+    } 
+
+     button {
+      width: 100%;
+    }
+    .check-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+  }
+  

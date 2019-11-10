@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About you</title>
+    <link rel="stylesheet" type="text/css" href="css/signup.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container about-you-container">
+            <!-- form -->
+            <form action="">
+                <h1>ABOUT YOU</h1>
+                <br>
+                <div class="form-info">
+                        <div class="form-group">
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" id="first_name" placeholder="Enter your first name">
+                        <div class="messages"></div>
+                        </div>
+                        <div class="form-group">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name" id="last_name" placeholder="Enter your last name">
+                        <div class="messages"></div>
+                        </div>
+                        <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password here">
+                        <div class="messages"></div>
+                        </div>
+                        <div class="form-group">
+                        <label for="date">Date of birth</label><span>(optional)</span>
+                        <input type="date" id="date" name="date" placeholder="Enter your birthday">
+                        <div class="messages"></div>
+                        </div>
+                        <span>We would provide gift on your birthday!</span>
+                        <!-- button -->
+                        <div  class="btn">
+                            <button><a href="index.html">Back</a></button>
+                        <div class = "form-group">
+                            <button type="submit" >Submit</button>
+                        </div>
+                            <button><a href="contact you.html">Next</a></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- progress nav bar -->
+        <div class="progressbar-left">
+                <div class="progressbar-container">
+                        <ul class="progressbar">
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                </div>
+        </div>
+    </div>
+    <!-- insert validation library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

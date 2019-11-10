@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact you</title>
+    <link rel="stylesheet" type="text/css" href="css/signup.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container about-you-container">
+                <!-- form -->
+            <form action="">
+                <h1>Contact You</h1>
+                <div class="form-info">
+                        <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email here">
+                        <div class="message"></div>
+                        </div>
+                        <div class="form-group">
+                        <label for="mobile">Phone Number</label>
+                        <input type="text" id="mobile" name="mobile" placeholder="Enter your phone number">
+                        <div class="message"></div>
+                        </div>
+                        <label>Communication Preference</label>
+                        <div class="check-container">
+                                <label class="checkboxContainer">E-mail
+                                        <input type="checkbox" id="preference"  name="preference">
+                                </label>
+                                <label class="checkboxContainer">SMS(Text Message)
+                                        <input type="checkbox" id="preference"  name="preference">
+                                </label>
+                        </div>
+                        <!-- button -->
+                        <div  class="btn">
+                                <button><a href="about you.html">Back</a></button>
+                                <button type="submit">Submit</button>
+                                <button><a href="set up.html">Next</a></button>
+                        </div>
+                </div>
+
+            </form>
+        </div>
+        <!-- progress nav bar -->
+        <div class="progressbar-left">
+                <div class="progressbar-container">
+                        <ul class="progressbar">
+                            <li></li>
+                            <li class="active"></li>
+                            <li></li>
+                        </ul>
+                </div>
+        </div>
+    </div>
+    <!-- insert validation library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

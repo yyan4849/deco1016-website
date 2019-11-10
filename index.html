@@ -1,0 +1,122 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>landing page</title>
+</head>
+<body id="top">
+ <!-- nav bar -->
+<header>
+    <ul class="outer">
+        <li class = "logo"><a href="#">coles</a></li>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Team</a></li>
+        <li class="headMin">
+            coles
+            <div class="menu-toggle"></div>
+        </li>
+    </ul>
+    <div class="dropMenu">
+        <div class="menu-list active">Home</div>
+        <div class="menu-list">Login</div>
+        <div class="menu-list">About</div>
+        <div class="menu-list">Team</div>
+    </div>
+</header>
+<!-- banner -->
+<div class="banner">
+    <div class="outer">
+        <div class="ban-left">
+            <div class="desc1">Most trusted Retailer in Australia</div>
+            <div class="desc2">Sustainably feed all Australians to help them live healthier and happier lives.</div>
+            <div class="btn"><a href="about you.html">Signup</a></div>
+        </div>
+        <!-- banner pic -->
+        <div class="ban-right">
+            <img src="./img/pic.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+<!--introduction-->
+<div class="introduce">
+    <div class="outer">
+        <div class="card">
+            <img src="img/selling.png">
+            <div class="title">Smarter Selling</div>
+            <div class="content">Through efficiency and pace of change. We could achieve more than you want, exceed the expectation and your target.</div>
+        </div>
+        <div class="card">
+            <img src="img/inspiring.png">
+            <div class="title">Inspiring</div>
+            <div class="content">Through best value food and drink solutions to make lives easier. We contribute quickening and exalting influence in Australia.</div>
+        </div>
+        <div class="card">
+            <img src="img/sustain.png">
+            <div class="title">Sustainably</div>
+            <div class="content">Consider our social and environmental impacts in all that we do. We implementing various techniques to build a healthier earth.</div>
+        </div>
+    </div>
+</div>
+
+<!--mainShow-->
+<div class="mainShow">
+    <div class="outer">
+        <div class="show-left">
+            <div class="title">30min Easy Recipe</div>
+            <div class="desc">Explore our done-for you lunch or dinner Christmas menus. Whether you're searching for traditional or modern, show-stopper or fuss-free, we have you covered!</div>
+            <div class="btn">VIEWMORE</div>
+        </div>
+        <div class="show-right">
+            <img src="img/recipe.jpg">
+        </div>
+    </div>
+    <div class="outer mediaMax">
+        <div class="show-left">
+            <img src="img/discount.jpg">
+        </div>
+        <div class="show-right">
+            <div class="title">Discount and Fresh Product</div>
+            <div class="desc">Join thousands of small, medium and enterprise businesses across Australia who choose coles as their business grocery supplier.</div>
+            <div class="btn">VIEWMORE</div>
+        </div>
+    </div>
+    <!-- change the order when mediaMin -->
+    <div class="outer mediaMin">
+        <div class="show-left">
+            <div class="title">Discount and Fresh Product</div>
+            <div class="desc">Join thousands of small, medium and enterprise businesses across Australia who choose coles as their business grocery supplier.</div>
+            <div class="btn">VIEWMORE</div>
+        </div>
+        <div class="show-right">
+            <img src="img/discount.jpg">
+        </div>
+    </div>
+    <div class="outer">
+        <div class="show-left">
+            <div class="title">Shop Online Deliver Home</div>
+            <div class="desc">We offer a wide choice of the world's most respected brands at great prices from groceries and baby products to cleaning goods and stationery.</div>
+            <div class="btn">VIEWMORE</div>
+        </div>
+        <div class="show-right">
+            <img src="img/delivery.jpg">
+        </div>
+    </div>
+</div>
+<div class="back"><a href = "#top">Back To Top</a></div>
+</body>
+<!-- burger bar expand -->
+<script>
+        document.querySelector('.menu-toggle').addEventListener('click',function () {
+        if(document.querySelector('.dropMenu').className=='dropMenu'){
+            document.querySelector('.dropMenu').className='dropMenu show'
+        }else{
+            document.querySelector('.dropMenu').className='dropMenu'
+        }
+    })
+</script>
+</html>

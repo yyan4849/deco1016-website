@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i&display=swap');
+/* general set up */
+*{
+margin: 0 auto;
+}
+body {
+    margin:0 auto;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+}
+/* text set up */
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 5em;
+}
+h2{
+    text-align: center;
+    font-size: 2em;
+    font-style: thin 100;
+    margin-bottom: 40px;
+}
+h3{
+    text-align: center;
+    margin:10px;
+    width:200px;
+    /* color:#da5148; */
+}
+h4{
+    text-align: center;
+    color:#da5148;
+}
+.finish-container{
+    margin:50px;
+    text-align: center;
+}
+p{
+    font-size: 1.2em;
+    font-style: thin;
+    /* font-family: 'Dancing Script', cursive; */
+}
+/* item container */
+.item-table-container{
+    margin:20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+    width:80%
+}
+/* three cards */
+.box1, .box2, .box3{
+    display: border-box;
+    /* border: 1px solid  #f5c285; */
+    background-color:#f5eee6;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin: 10px auto;
+}
+img{
+    max-width: 220px;
+    position: relative;
+    left:0;
+}
+
+li{
+    list-style: none;
+    text-align:center;
+    margin: 5px 0;
+}
+.recipe-info{
+    display:block;
+}
+span{
+    text-align: center;
+    margin-left:10px;
+}
+ul.recipe-info{
+    padding:0px 0px;
+}
+/* ====button==== */
+.shop-btn{
+    width:50%;
+    margin:20px auto;
+    border-radius: 20px;
+    border: 1px solid #da5148;
+    background-color: #da5148;
+    color:white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+.shop-btn:hover{
+    transform: scale(0.95);
+    background:#f5c285;
+}
+/* responsive design */
+@media screen and (max-width:768px){
+    .item-table-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
